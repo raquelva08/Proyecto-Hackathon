@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F2D5FF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado agregar más texto e imagen*/
+header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #6A0DAD;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+
+.div-container {
+    background-color: #ffffff;
+    margin: 2% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 30vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s ease, border 0.2s ease
+}
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #6A0DAD;
+    border: 1px solid #6A0DAD;
+}
+.textarea {
+    resize: vertical;
+} 
+
+/* Estilo para el desplegable */
+select {
+    width: 100%;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 1em;
+}
+.form-group {
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333333; 
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6A0DAD;
+    color: #ffffff;
+    border: 1px solid #6A0DAD;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+}   
+button:hover {
+    background-color: #56177d;
+}
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #050008;
+}
+
+
+
+/* Fin del archivo CSS */
+
+
+
+ 
