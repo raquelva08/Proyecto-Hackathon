@@ -19,8 +19,8 @@ html, body{
 }
 
 .logo-f5{
-    width: 160px;
-    height: 65px;
+    width: 140px;
+    height: 60px;
 }
 
 .img-logo{
@@ -34,13 +34,13 @@ html, body{
     justify-content: space-around;
     align-items: center;
     margin-right: 50px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
 
 .nav-menu li{
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 20px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -58,7 +58,7 @@ html, body{
 }
 
 .nav-menu a{
-    color: #ccc;
+    color: #f0edf7;
     text-decoration: none;
 }
 
@@ -68,27 +68,45 @@ main {
     justify-content: center;
     align-items: flex-start;
     padding: 0;
+    flex-direction: column;
 }
 
 footer {
     width: 100%;
     background-color: black;
-    color: #ccc;
+    color: #f0edf7;
     text-align: center;
     padding: 10px 0;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: bold;
 }
 
-/* Contenedor general del hero - contador */
+/* Sección 1 hero - contador */
+
 .contenedor-hero{
     width: 100%;       /* Controla el ancho máximo */
     text-align: center;
     padding: 60px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.imagen-inicio-vsc{
+    width: 40vw;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px black;
+}
+
+.imagen-inicio-vsc:hover{
+    transform: translateY(-4px);
 }
 
 .hero{
-    font-size: clamp(36px, 6vw, 64px); /* responsive */
+    font-size: clamp(36px, 6vw, 54px); /* responsive */
     color: #4311B9;
     margin: 0 0 16px 0;
     font-weight: 800;
@@ -99,9 +117,9 @@ footer {
 }
 
 .texto-contador{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    color: #6b627b;
+    color: black;
     font-weight: 600;
     margin: 14px 0 28px 0;
 }
@@ -148,9 +166,9 @@ footer {
 }
 
 .texto-numero{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color: #6b627b;
+    color: black;
 }
 
 .boton-inscribete{
@@ -198,4 +216,147 @@ footer {
     .hero { 
         font-size: 36px; 
     }
+}
+
+/* Sección 2 del estilo objetivos */
+
+.contenedor-objetivos {
+    width: 100%;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #dcd3f5;
+    border-top: 20px solid;
+    border-image: linear-gradient(90deg, #dcd3f5, #E5DFF4) 1;
+}
+
+.titulo-objetivo {
+    font-size: clamp(26px, 3vw, 46px);
+    color: black;
+    margin: 0 0 16px 0;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.conjunto-objetivos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* hace que todas las tarjetas tengan la misma altura */
+    gap: 60px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.objetivo {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: #efeafb;
+    box-shadow: 0 12px 30px rgba(67, 17, 185, 0.3);
+    padding: 0px 35px 20px 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; /* empieza desde arriba */
+    text-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid black;
+}
+
+.objetivo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 35px rgba(67, 17, 185, 0.4);
+}
+
+.numero-objetivo {
+    background-color: #4311B9;
+    color: #efeafb;
+    font-size: 40px;
+    font-weight: bold;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.objetivo h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.texto-objetivo {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-top: -1px;
+}
+
+p.exalumna-texto{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.exalumna-texto a{
+    color: inherit; /* mismo color que el texto */
+    text-decoration: none; /* quita el subrayado */
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.exalumna-texto a:hover {
+    color: #3b0fcf;
+}
+
+.exalumna-texto a:active {
+    color: #2b0d7a;
+}
+
+/* Sección 3 de estilo detalles del evento */
+
+.seccion-detalles{
+    width: 100%;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #E5DFF4;
+    border-top: 20px solid;
+    border-image: linear-gradient(90deg, #E5DFF4, #dcd3f5) 1;
+}
+
+.detalles-evento{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-detalle{
+    font-size: clamp(26px, 3vw, 46px);
+    color: black;
+    margin: 0 0 40px 0;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contenedor-detalles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.icono-detalle{
+    width: 60px;
+    height: 60px;
+}
+
+.titulo-icono{
+    font-weight: bold;
 }
