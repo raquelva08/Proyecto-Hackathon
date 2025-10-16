@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F2D5FF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado agregar más texto e imagen*/
+header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #6A0DAD;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+=======
 html, body{
     background-color: #E5DFF4;
     margin: 0;
@@ -50,6 +74,7 @@ html, body{
 
 main {
     flex: 1;
+>>>>>>> 76e699baa5e96e1de88e078b23bf5ec89556af4b
 }
 
 h1 {
@@ -136,6 +161,71 @@ button:focus {
     box-shadow: 0 0 5px #050008;
 }
 
+<<<<<<< HEAD
+
+
+/* Fin del archivo CSS */
+
+
+
+ 
+=======
+html, body{
+    background-color: #E5DFF4;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu{
+    background-color: black;
+    padding: 4px;
+}
+
+.logo-f5{
+    width: 160px;
+    height: 65px;
+}
+
+.img-logo{
+    width: 40%;
+}
+
+.nav-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-menu li{
+    padding: 10px;
+}
+
+.nav-menu li:hover{
+    background-color: #4311B9;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px #E5DFF4;
+}
+
+.nav-menu a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+}
+
+=======
+>>>>>>> 76e699baa5e96e1de88e078b23bf5ec89556af4b
 footer {
     width: 100%;
     background-color: black;
@@ -145,4 +235,8 @@ footer {
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
 }
+<<<<<<< HEAD
+>>>>>>> ec7edc281eae58cafc5b8e346a22786a08ae3966
+=======
 
+>>>>>>> 76e699baa5e96e1de88e078b23bf5ec89556af4b
