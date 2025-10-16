@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     display: flex;
     justify-content: center;
@@ -112,3 +113,68 @@ button:focus {
 
 
  
+=======
+html, body{
+    background-color: #E5DFF4;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu{
+    background-color: black;
+    padding: 4px;
+}
+
+.logo-f5{
+    width: 160px;
+    height: 65px;
+}
+
+.img-logo{
+    width: 40%;
+}
+
+.nav-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-menu li{
+    padding: 10px;
+}
+
+.nav-menu li:hover{
+    background-color: #4311B9;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px #E5DFF4;
+}
+
+.nav-menu a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+>>>>>>> ec7edc281eae58cafc5b8e346a22786a08ae3966
