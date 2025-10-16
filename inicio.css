@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 body{
 background-color: #F2D5FF;
 =======
@@ -12,6 +13,23 @@ html, body{
 }
 >>>>>>> ec7edc281eae58cafc5b8e346a22786a08ae3966
 
+=======
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #E5DFF4;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', system-ui, sans-serif;
+}
+
+>>>>>>> 76e699baa5e96e1de88e078b23bf5ec89556af4b
 .nav-menu{
     background-color: black;
     padding: 4px;
@@ -40,6 +58,7 @@ html, body{
 
 .nav-menu li{
     padding: 10px;
+<<<<<<< HEAD
 }
 
 .nav-menu li:hover{
@@ -51,18 +70,176 @@ html, body{
 .nav-menu a{
     color: #ccc;
     text-decoration: none;
+=======
+    border-radius: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-menu li:hover{
+    
+    color: black;
+    background-color: #E5DFF4;
+    border-color: black;
+    box-shadow: 0 2px 20px #E5DFF4;
+}
+
+.nav-menu li:hover a {
+    color: black;
+}
+
+.nav-menu a{
+    color: #E5DFF4;
+    text-decoration: none;
+    font-family: 'Poppins', system-ui, sans-serif;
+>>>>>>> 76e699baa5e96e1de88e078b23bf5ec89556af4b
 }
 
 main {
     flex: 1;
+<<<<<<< HEAD
+=======
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+>>>>>>> 76e699baa5e96e1de88e078b23bf5ec89556af4b
 }
 
 footer {
     width: 100%;
     background-color: black;
+<<<<<<< HEAD
     color: #ccc;
     text-align: center;
     padding: 10px 0;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
 }
+=======
+    color: #E5DFF4;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-weight: bold;
+}
+
+/* Contenedor general del hero - contador */
+.contenedor-hero{
+    width: 100%;       /* Controla el ancho máximo */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero{
+    font-size: clamp(36px, 6vw, 64px); /* responsive */
+    color: #4311B9;
+    margin: 0 0 16px 0;
+    font-weight: 800;
+    text-shadow: 0 6px 18px rgba(59,15,207,0.3);
+    letter-spacing: 2px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.texto-contador{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #6b627b;
+    font-weight: 600;
+    margin: 14px 0 28px 0;
+}
+
+.contenedor-contador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.contador{
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.caja-tiempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #efeafb;
+    min-width: 150px;
+    padding: 22px 18px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(67, 17, 185, 0.3);
+}
+
+.caja-tiempo:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 20px rgba(59,15,207,0.4);
+}
+
+.numero{
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    color: #4311B9;
+    line-height: 1;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.texto-numero{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #6b627b;
+}
+
+.boton-inscribete{
+    display: inline-block;
+    margin-top: 18px;
+    text-decoration: none;
+}
+
+.boton-inscribete button{
+    background: #4311B9;
+    color: white;
+    border: none;
+    padding: 18px 54px;
+    border-radius: 60px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 18px 40px rgba(59,15,207,0.3);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.boton-inscribete button:hover {
+    transform: translateY(-3px);
+    box-shadow: 10px 26px 40px rgba(59,15,207,0.4);
+    background-color: #3b0fcf;
+}
+
+@media (max-width: 720px) {
+    .contador { 
+        gap: 14px; 
+    }
+    .caja-tiempo { 
+        min-width: 120px; 
+        padding: 16px; 
+        border-radius: 14px; 
+    }
+    .numero { 
+        font-size: 36px; 
+    }
+    .boton-inscribete button { 
+        padding: 14px 30px; 
+        font-size: 18px; 
+    }
+    .hero { 
+        font-size: 36px; 
+    }
+}
+>>>>>>> 76e699baa5e96e1de88e078b23bf5ec89556af4b
