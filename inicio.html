@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="inicio.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
     <title>Inicio</title>
     <link rel="stylesheet" href="inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <a href="inscribete.html" class="boton-inscribete"><button>¡Inscríbete ahora!</button></a>
+            <a href="inscribete.html" class="boton-inscribete"><button>¡Inscríbete aquí ahora!</button></a>
         </section>
 
 
@@ -55,5 +55,54 @@
     <footer>
         <p>&copy; 2025 Hackathon. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        // Fecha objetivo: 20 de diciembre de 2025 a las 9:00 AM
+        const targetDate = new Date('2025-12-20T09:00:00').getTime();
+
+        //.getTime() es un método para convertirlo en milisegundos.
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            //Restamos la fecha objetivo menos la fecha actual, si es positivo va a pasar y si es negativo ya ha pasado.
+
+            // Calcular días, horas, minutos y segundos
+            const dias = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((distance % (1000 * 60)) / 1000);
+            //Convertimos milisegundos a días, horas, minutos y segundos. 
+            // 1 s = 1.000 ms
+            // 1 min = 60 segundos = 60 * 1.000 ms
+            // 1 h = 60 min = 60 * 60 * 1.000 ms
+            // 1 dia = 24 h = 24 * 60 * 60 * 1.000 ms
+
+            // Math.floor(...) redondea hacia abajo para obtener días completos restantes.
+            // distance % (1000*60*60*24) usa el módulo para quitar los días completos y quedarse solo con el resto de ms del día actual.
+            // Dividimos ese resto por (1000*60*60) para convertir a horas.
+
+            // Actualizar el HTML
+            document.getElementById('dias').textContent = dias.toString().padStart(2, '0');
+            document.getElementById('horas').textContent = horas.toString().padStart(2, '0');
+            document.getElementById('minutos').textContent = minutos.toString().padStart(2, '0');
+            document.getElementById('segundos').textContent = segundos.toString().padStart(2, '0');
+
+            //document.getElementById('days') busca el elemento del DOM con id days (por ejemplo <span id="days">00</span>).
+            //.textContent = ... sustituye el texto interior por el valor calculado.
+            //toString().padStart(2, '0') convierte el número a cadena y añade un 0 al principio si tiene 1 dígito → muestra 05 en lugar de 5. (mejor presentación).
+
+            // Si la cuenta regresiva termina
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.querySelector('.contenedor-contador').innerHTML = '<p class="texto-contador">¡El Hackathon ha comenzado!</p>';
+            }
+        }
+        // Actualizar inmediatamente
+        updateCountdown();
+        // Actualizar cada segundo
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
 </body>
 </html>
