@@ -1,3 +1,4 @@
+
 html, body{
     background-color: #E5DFF4;
     margin: 0;
@@ -29,7 +30,7 @@ html, body{
     align-items: center;
     margin-right: 50px;
     font-family:'Courier New', Courier, monospace;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -47,17 +48,57 @@ html, body{
     color: #ccc;
     text-decoration: none;
 }
-
 main {
-    flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4em 2em;
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
 }
 
+.programar {
+  flex: 1;
+  background-color: rgba(178, 149, 246, 0.3); /* lila transparente */
+  padding: 2em;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.fotos {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  justify-self: center;
+
+}
+.programar h2 {
+  font-size: 2em;
+  color: #4311B9;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #b295f6, #7ec8e3); /* degradado lila-azul */
+  color: white;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.programar p{
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333
+}
 footer {
-    width: 100%;
-    background-color: black;
-    color: #ccc;
-    text-align: center;
-    padding: 10px 0;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
+  width: 100%;
+  background-color: black;
+  color: #ccc;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
