@@ -69,7 +69,8 @@ main {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 40px;
     padding: 0;
     flex-direction: column;
 }
